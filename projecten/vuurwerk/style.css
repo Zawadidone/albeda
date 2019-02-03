@@ -1,0 +1,45 @@
+body {
+    background-image: url("https://images7.alphacoders.com/379/379407.jpg");
+}
+#winkel{
+    width:150px;
+    height:125px;
+}
+#verwijder{
+    width:15px;
+    height:15px;
+}
+#logo{
+    display: block;
+    margin: auto;
+    width:500px;
+    height:125px;
+}
+#links{
+    float:left;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+}
+table{
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul {
+    list-style-type: none;
+}
+
+img{
+    width:75px;
+    height:75px;
+}
+*{
+    font-family: Arial;
+    color:yellow;
+    text-decoration: none;
+}

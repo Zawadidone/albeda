@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Opdracht 6</title>
+<style>
+img{
+height:100px;
+width:100px;
+}
+table,th ,td{
+border: 1px solid black;
+background-color:green;
+padding:50px;
+
+}
+
+
+
+.colspan{
+background-color:red;
+}
+
+}
+.rowspan{
+background-color:yellow;
+}
+
+</style>
+</head>
+<body>
+
+ <table>
+ <tr>
+ <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/2000px-Tux.svg.png"/></td>
+ <td><img src="https://assets.ubuntu.com/v1/3361409d-apple-touch-icon-144x144-precomposed.png"/></td>
+ <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Lubuntu.svg/2000px-Lubuntu.svg.png "/></td>
+ </tr>
+ 
+ <tr>
+ <td colspan="2" class="colspan"><img src="http://cdn.wccftech.com/wp-content/uploads/2015/04/windows_logo.png"/> </td>
+ <td><img src="http://www.blugraphic.com/wp-content/uploads/2013/04/Apple-Vector-Logo-11.jpg"/> </td>
+ </tr>
+ 
+ <tr> 
+ <td><img src="http://iculture.textopus.nl/wp-content/uploads/2016/06/ios-10-logo.jpg "/></td>
+ <td colspan="2" class="colspan"><img src="https://cnet4.cbsistatic.com/hub/i/2011/10/27/a66dfbb7-fdc7-11e2-8c7c-d4ae52e62bcc/android-wallpaper5_2560x1600_1.jpg "/> </td>
+ </tr>
+ </table> 
+ </br>
+ 
+ <table> <!-- rowspan werkt niet -->
+ 
+ 
+ <td colspan="2" class="colspan"> Hoi</td>
+ 
+ </tr>
+ <tr>
+<td colspan="2" class="colspan">Hoi</td>
+
+ </tr>
+ <tr>
+ <td rowspan="2" class="rowspan">Hoi</td>
+ <td rowspan="2"  class="rowspan">Hoi</td>
+ </tr>
+ <tr>
+ 
+ 
+ </tr>
+ <tr>
+ 
+ </tr>
+ <tr>
+
+ </tr>
+ 
+ </table>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+</body>
+</html>

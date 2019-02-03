@@ -1,0 +1,21 @@
+<html>
+<head>
+<script type="text/javascript">
+function som()
+	{
+
+	var cijfer1 = parseInt(document.getElementById("box1").value);
+	var cijfer2 = parseInt(document.getElementById("box2").value);
+    var antwoord =  cijfer1 + cijfer2;
+    alert(antwoord);	
+	}
+</script>
+</head>
+<body>
+<form name="formulier">
+<input type="text" id="box1" value="">
+<input type="text" id="box2" value="">
+<input type="button" value="Reken" onClick="som()">
+</form>
+</body>
+</html>

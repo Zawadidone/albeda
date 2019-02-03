@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style type="text/css">
+img{
+width: 250px;
+height: 250px;}
+</style>
+<script type="text/javascript">
+function obama(){
+document.getElementById("obama").checked = true;
+}
+function donaldtrump(){
+document.getElementById("donaldtrump").checked = true;
+}
+function messi(){
+document.getElementById("messi").checked = true;
+}
+function ronaldo(){
+document.getElementById("ronaldo").checked = true;
+}
+function piet(){
+document.getElementById("piet").checked = true;
+}
+function reset() {
+document.getElementById("obama").checked = false;
+document.getElementById("donaldtrump").checked = false;
+document.getElementById("messi").checked = false;
+document.getElementById("ronaldo").checked = false;
+document.getElementById("piet").checked = false;
+}
+</script>
+</head>
+<body>
+<form name="form">
+Obama <input type="radio" id="obama"><a href="javascript:obama()">Selecteer</a><br>
+Donald Trump <input type="radio"id="donaldtrump"><a href="javascript:donaldtrump()">Selecteer</a><br>
+Messi <input type="radio"id="messi"><a href="javascript:messi()">Selecteer</a><br>
+Ronaldo <input type="radio"id="ronaldo"><a href="javascript:ronaldo()">Selecteer</a><br>
+Piet <input type="radio"id="piet"><a href="javascript:piet()">Selecteer</a><br>
+<a href="javascript:reset()">Reset</a>
+</form>
+</body>
+</html>

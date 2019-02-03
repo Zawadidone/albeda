@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
+
+
+
+</head>
+<body>
+<script type="text/javascript">
+    function showHide(btn){
+        $(btn).next('.showhide').toggle().siblings('.showhide').hide();
+    }
+</script>
+<a href="#" id="div"  onclick="showHide(this)">Div 1</a>
+<div id="divcontent" style="display:none;" class="showhide">Div 1</div>
+
+<a href="#" id="div2" onclick="showHide(this)">Div 2</a>
+<div id="divcontent2" style="display:none;" class="showhide">Div 2</div>
+
+<a href="#" id="div3" onclick="showHide(this)">Div 3</a>
+<div id="divcontent3" style="display:none;" class="showhide">Div 3</div>
+
+</body>
+</html>	

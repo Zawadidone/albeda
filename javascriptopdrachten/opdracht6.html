@@ -1,0 +1,67 @@
+<html>
+<head>
+<script type="text/javascript" >
+function plus() {
+plus1=parseFloat(document.form.getalplus1.value);
+plus2=parseFloat(document.form.getalplus2.value);
+resultaatplus=plus1+plus2;
+document.form.antwoordplus.value=resultaatplus;
+
+}
+
+function mind() {
+min1=parseFloat(document.form.getalmin1.value);
+min2=parseFloat(document.form.getalmin2.value);
+resultaatmin=min1-min2;
+document.form.antwoordmin.value=resultaatmin;
+	
+}
+function delen() {
+delen1=parseFloat(document.form.delen1.value);
+delen2=parseFloat(document.form.delen2.value);
+resultaatdelen=delen1/delen2;
+document.form.antwoorddelen.value=resultaatdelen;
+	
+}
+function keer() {
+keer1=parseFloat(document.form.keer1.value);
+keer2=parseFloat(document.form.keer2.value);
+resultaatkeer=keer1*keer2;
+document.form.antwoordkeer.value=resultaatkeer;
+	
+}
+</script>
+</head>
+<body>
+<form name="form" method="post" action="">
+<input type="text" name="getalplus1" id="getalplus1">
++&nbsp;
+<input type="text" name="getalplus2" id="getalplus2">
+=
+<input type="text" name="antwoordplus" id="antwoordplus">
+<input type="button" name="buttonplus" id="buttonplus" value="Berekenen" onclick="plus()">
+<br>
+<input type="text" name="getalmin1" id="getalmin1">
+-&nbsp;&nbsp;
+<input type="text" name="getalmin2" id="getalmin2">
+=
+<input type="text" name="antwoordmin" id="antwoordmin">
+<input type="button" name="buttonmin" id="buttonmin" value="Berekenen" onclick="mind()">
+<br>
+<input type="text" name="delen1" id="delen1">
+/&nbsp;&nbsp;
+<input type="text" name="delen2" id="delen2">
+=
+<input type="text" name="antwoorddelen" id="antwoorddelen">
+<input type="button" name="buttondelen" id="buttondelen" value="Berekenen" onclick="delen()">
+<br>
+<input type="text" name="keer1" id="keer1">
+*&nbsp;
+<input type="text" name="keer2" id="keer2">
+=
+<input type="text" name="antwoordkeer" id="antwoordkeer">
+<input type="button" name="buttonkeer" id="buttonkeer" value="Berekenen" onclick="keer()">
+
+</form>
+</body>
+</html>

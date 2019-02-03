@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<script type="text/javascript">
+function formulier() {
+
+var emailRegEx = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+if (document.form.email.value.search(emailRegEx) == -1){
+alert("Vul een geldig email in ");
+}
+else{
+alert("Het email adres is geldig");
+}     
+
+if (form.leeg.value=="") {
+alert("Het veld is leeg");
+}
+
+if (form.lengte.value.length > "10") {
+alert("De lengte is langer dan 10 tekens");
+}
+	
+}
+</script>
+</head>
+<body>
+<form name="form" action="" method="">
+Email<input type="text" name="email" id="email"><br>
+Leeg <input type="text" name="leeg" id="leeg"><br>
+Lengte <input type="text" name="lengte" id="lengte"><br>
+<input type="button" value="Verzenden" onclick="formulier()">
+</form>
+</body>
+</html>
+
+     
+     

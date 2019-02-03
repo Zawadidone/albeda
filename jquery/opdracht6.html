@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+
+            $('#checkbox').change(function(){
+                setInterval(function () {
+                    moveRight();
+                }, 3000);
+            });
+
+            var slideCount = $('#slider ul li').length;
+            var slideWidth = $('#slider ul li').width();
+            var slideHeight = $('#slider ul li').height();
+            var sliderUlWidth = slideCount * slideWidth;
+
+            $('#slider').css({ width: slideWidth, height: slideHeight });
+
+            $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+
+            $('#slider ul li:last-child').prependTo('#slider ul');
+
+            function moveLeft() {
+                $('#slider ul').animate({
+                    left: + slideWidth
+                }, 200, function () {
+                    $('#slider ul li:last-child').prependTo('#slider ul');
+                    $('#slider ul').css('left', '');
+                });
+            };
+
+            function moveRight() {
+                $('#slider ul').animate({
+                    left: - slideWidth
+                }, 200, function () {
+                    $('#slider ul li:first-child').appendTo('#slider ul');
+                    $('#slider ul').css('left', '');
+                });
+            };
+
+            $('a.control_prev').click(function () {
+                moveLeft();
+            });
+
+            $('a.control_next').click(function () {
+                moveRight();
+            });
+
+        });
+
+    </script>
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+        html {
+            border-top: 5px solid #fff;
+            background: #58DDAF;
+            color: #2a2a2a;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans';
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+            font-weight: 300;
+        }
+
+        #slider {
+            position: relative;
+            overflow: hidden;
+            margin: 20px auto 0 auto;
+            border-radius: 4px;
+        }
+
+        #slider ul {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            height: 200px;
+            list-style: none;
+        }
+
+        #slider ul li {
+            position: relative;
+            display: block;
+            float: left;
+            margin: 0;
+            padding: 0;
+            width: 500px;
+            height: 300px;
+            background: #ccc;
+            text-align: center;
+            line-height: 300px;
+        }
+
+        a.control_prev, a.control_next {
+            position: absolute;
+            top: 40%;
+            z-index: 999;
+            display: block;
+            padding: 4% 3%;
+            width: auto;
+            height: auto;
+            background: #2a2a2a;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+        a.control_prev:hover, a.control_next:hover {
+            opacity: 1;
+            -webkit-transition: all 0.2s ease;
+        }
+
+        a.control_prev {
+            border-radius: 0 2px 2px 0;
+        }
+
+        a.control_next {
+            right: 0;
+            border-radius: 2px 0 0 2px;
+        }
+
+        .slider_option {
+            position: relative;
+            margin: 10px auto;
+            width: 160px;
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="slider">
+    <a href="#" class="control_next">>></a>
+    <a href="#" class="control_prev"><</a>
+    <ul>
+        <li><img src="https://static2.jetpens.com/images/a/000/044/44501.jpg?mark64=aHR0cDovL3d3dy5qZXRwZW5zLmNvbS9pbWFnZXMvYXNzZXRzL3dhdGVybWFyay5wbmc&markalign64=dG9wLHJpZ2h0&markscale=19&s=140f5941b4d4cf34a58e1c5a24bbc1b5"></li>
+        <li><img src="http://www.killercrossexamination.com/wp-content/uploads/2016/12/Blue-Bic-biro-pen.jpg"> </li>
+        <li><img src="data:image/png;base64,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"></li>
+        <li><img src="http://pngimg.com/uploads/pen/pen_PNG7405.png"></li>
+    </ul>
+</div>
+
+
+
+</body>
+</html>

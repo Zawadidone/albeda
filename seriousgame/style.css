@@ -1,0 +1,186 @@
+html, body{
+	background-color:#fcf9f3;
+	margin:0;
+	height:100%;
+	font-family:'Dosis', sans-serif;
+}
+
+a{
+	color: #ff4444;
+	text-decoration: none;
+}
+
+input{
+	width: 100%;
+	margin-bottom: 1em;
+	border: 1px solid #000;
+	border-width: 0 0 1px 0;
+    background: transparent;
+    padding: 10px 0;
+    max-width: 50%;
+}
+
+input[type='radio']{
+	width:15px;
+	border-width:1px;
+	vertical-align: middle;
+
+}
+
+input:focus{
+	outline: none;
+}
+
+input:-webkit-autofill {
+    background-color: transparent !important;
+        -webkit-text-fill-color: #333;
+    -webkit-box-shadow: 0 0 0px 1000px #fcf9f3 inset;
+
+}
+
+table{
+	margin:0 auto;
+	text-align:left;
+	border-spacing:0;
+}
+
+th, td{
+	padding:5px;
+
+}
+
+th{
+	border-bottom:1px solid rgba(0,0,0,0.2);
+}
+
+.dropdown{
+	list-style-type: none;
+}
+
+#navbar li {
+	list-style-type:none;
+}
+
+#navbar a{
+	text-decoration:none;
+}
+
+.navbar {
+	width:15%;
+	background-color:#EFEFEB;
+	color:white;
+	display:inline-block;
+	height:100%;
+	vertical-align:top;
+}
+
+.container-fluid{
+	width:79%;
+	display:inline-block;
+	vertical-align:top;
+	text-align: center;
+}
+
+.container{
+	text-align:center;
+}
+
+.menu{
+	text-align:center;
+
+}
+
+.menu a{
+	text-decoration:none;
+	color:#f6546a;
+}
+
+#topbar{
+	background: #000;
+	color: #fff;
+}
+	.app-title{
+		padding: 18px;
+		display: inline-block;
+	}
+	.app-menu{
+		float: right;
+		padding: 0;
+	}
+	.app-menu a{
+		padding: 18px;
+		color: #fff;
+		display: inline-block;
+	}
+
+
+#side-menu{
+	margin:0;
+	padding:0;
+	background-color: #EFEFEB;
+}
+
+#side-menu li{
+	background-color:#EFEFEB;
+	color: #000;
+	text-align: left;
+	text-transform: uppercase;
+	border: 1px solid rgba(0,0,0,0.1);
+	border-bottom: 0 solid red;
+}
+#side-menu li:last-child{
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+#side-menu li a{
+	color: #000;
+}
+
+
+.icon-wrapper{
+	width:50px;
+	display:inline-block;
+	font-size:40px;
+	text-align: center;
+}
+
+.item-text{
+	vertical-align: top;
+	padding: 10px;
+	display:inline-block;
+}
+
+button{
+	display:block;
+	margin:0 auto;
+	width:260px;
+	height:36px;
+	border-radius:30px;
+	color:#fff;
+	font-size:15px;
+	cursor:pointer;
+	border:none;
+	outline:none;
+	background-color:#d4af7a;
+	font-family:'Dosis' , Helvetica, Arial, sans-serif;
+}
+
+.table-button{
+	width:auto;
+	padding:0 13px;
+	background:transparent;
+	color:#ff4445;
+	border-bottom:1px solid black;
+}
+
+.table-button-left{
+	border-radius: 30px 0 0 30px;
+}
+
+.table-button-right{
+	border-radius: 0 30px 30px 0;
+}
+
+form.table-form{
+	display: inline-block;
+}

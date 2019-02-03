@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$('#nav a').click(function(e) { 
+			  $('#content').hide().load( $(this).attr('href') , function(){
+					 $('#content').show()
+			  });
+			  /* css kleur gelijk maken van de links */
+			  $("#nav a").css("color", "blue");	
+			   /* css kleur geselecteerde link veranderen*/
+			  $(this).css("color", "red");	
+			  return false
+		})
+	})
+	</script>
+
+<title></title>
+<style>
+
+</style>
+
+</head>
+<body>
+<div id="menu">
+<h1>Menu</h1>
+</div>
+<div id="links">
+<ul>
+	<li><a href="opdracht7.html">Link 1</a></li>
+	<li><a href="opdracht7b.html">Link 2</a></li>
+	<li><a href="opdracht7c.html">Link 3</a></li>
+</ul>
+<p>
+	Hoi ik ben link 2
+</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#bounce').click(function() {
+                $('div').effect('bounce',{times:3}, 500);
+            });
+        });
+        $(document).ready(function() {
+            $('#clip').click(function() {
+                $('div').effect('clip',{times:3}, 500);
+            });
+        });
+        $(document).ready(function() {
+            $('#drop').click(function() {
+                $('div').effect('drop',{times:3}, 500);
+            });
+        });
+        $(document).ready(function() {
+            $('#explode').click(function() {
+                $('div').effect('explode',{times:3}, 500);
+            });
+        });
+        $(document).ready(function() {
+            $('#fold').click(function() {
+                $('div').effect('fold',{times:3}, 500);
+            });
+        });
+        $(document).ready(function() {
+            $('#highlight').click(function() {
+                $('div').effect('highlight',{times:3}, 500);
+            });
+        });
+        $(document).ready(function() {
+            $('#puff').click(function() {
+                $('div').effect('puff',{times:3}, 500);
+            });
+        });
+        $(document).ready(function() {
+            $('#pulsate').click(function() {
+                $('div').effect('pulsate',{times:3}, 500);
+            });
+        });
+        $(document).ready(function() {
+            $('#scale').click(function() {
+                $('div').effect('scale',{times:3}, 500);
+            });
+        });
+        $(document).ready(function() {
+            $('#shake').click(function() {
+                $('div').effect('shake',{times:3}, 500);
+            });
+        });
+        $(document).ready(function() {
+            $('#size').click(function() {
+                $('div').effect('size',{times:3}, 500);
+            });
+        });
+        $(document).ready(function() {
+            $('#slide').click(function() {
+                $('div').effect('slide',{times:3}, 500);
+            });
+        });
+    </script>
+    <style>
+        div{
+            width:150px;
+            height:150px;
+            background-color: black;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<button id="bounce">Bounce</button>
+<button id="clip">Clip</button>
+<button id="drop">Drop</button>
+<button id="explode">Explode </button>
+<button id="fold">Fold </button>
+<button id="highlight">Highlight </button>
+<button id="puff">Puff </button>
+<button id="pulsate">Pulsate </button>
+<button id="scale">Scale </button>
+<button id="shake">Shake </button>
+<button id=" size"> Size </button>
+<button id="slide">Slide </button>
+<br>
+<div></div>
+</body>
+</html>	

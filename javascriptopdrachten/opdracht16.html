@@ -1,0 +1,48 @@
+<html>
+<head>
+<script type="text/javascript" > 
+function toets(){
+if(document.getElementById("radio2").checked)//radiobutton controleren en daarna values write
+{
+var x = document.getElementById("naam").value;
+    document.getElementById("demo").innerHTML = x;
+    
+var z = document.getElementById("klas").value;
+    document.getElementById("demo1").innerHTML = z;   
+     
+var y = document.getElementById("radio2").value;
+    document.getElementById("demo2").innerHTML = y;    
+   
+    
+
+}
+else //als het er niks is ingevuld of radio 1 dan fout
+ {
+  alert("Het antwoord is niet goed");
+  location.reload();
+}
+ }
+ </script>
+ </head>
+ <body>
+ <form name="form" method="POST">
+ Naam  <input type="text" id="naam"required>
+ <br>
+ Klas  <input type="text" id="klas"required/>
+ <br>
+ Wie is de president van Amerika?
+ <br>
+ Barack Obama <input type="radio" id="radio1" value="Barack Obama">
+ <br>
+ Donald Trump <input type="radio" id="radio2" value="Donald Trump">
+ <br>
+ <input type="button" onClick="toets()" value="Verzenden">
+ </form>
+ <p id="demo"></p>
+  <p id="demo1"></p>
+   <p id="demo2"></p>
+
+ 
+ 
+ </body>
+ </html>

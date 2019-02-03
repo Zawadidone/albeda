@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<script language="javascript">
+    function OptionsToevoegen(selectbox,text,value )
+    {
+        var optn = document.createElement("OPTION");
+        optn.text = text;
+        optn.value = value;
+        selectbox.options.add(optn);
+    }
+
+    /* deze functie wordt geladen door de body */
+    function selecteerOpties(){
+        /* array met opties */
+        var kleur = new Array("Red", "Blue", "Green", "Yellow", "Purple", "Orange");
+        /* for loop telt eerst het aantal mogelijkheden en maakt daarna een option aan. */
+        for (var i=0; i < kleur.length;++i)
+        {
+            OptionsToevoegen(window.document.formulier.kleur, kleur[i], kleur[i]);
+            /* geef het aantal items van array in een div */
+            document.getElementById("aantal").innerHTML = "Het aantal items van de array: " + kleur.length;
+        }
+    }
+
+    function Achtergrondkleur() {
+        var x = document.getElementById("kleur");
+        window.document.bgColor = x.value  ;
+    }
+</script>
+
+<body onLoad="selecteerOpties()";>
+
+<script language="javascript">
+
+</script>
+<div id="aantal"></div>
+    <form name="formulier" action="" method="post" >
+        <select name="kleur" id="kleur" onChange="Achtergrondkleur();">
+            <option value="">Selecteer een kleur uit Array</option>
+        </select>
+    </form>
+</body>
+</html>

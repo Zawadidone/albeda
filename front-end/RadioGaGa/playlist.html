@@ -1,0 +1,165 @@
+<!-- website RadioGaGa -->
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+		<meta http-equiv="Content-Type"
+		content="text/html";
+		charset=UTF-8">
+		<link rel="stylesheet" href="style.css">
+
+<meta name="robots" content="all">
+<meta name="language" content="Dutch">
+<meta name="author" content="Brian Oost">
+<meta name="description"
+	content="RadioGaGa marketing">
+<meta name="keywords"
+	content="RadioGaGa, muziek, playlist">
+<title>RadioGaGa</title>
+</head>
+	<body>
+ 			<nav>
+ 				<ul>
+ 					<li><a href="index.html">Home</a></li>
+ 					<li><a href="playlist.html">Playlist</a></li>
+ 					<li><a href="formulier.html">Formulier</a></li>
+ 					<li><a href="contact.html">Contact</a></li>
+				</ul>
+ 			</nav>
+ 			<div id="logo">
+ 				<img width="200px" src="https://sonyglobal.scene7.com/is/image/gwtprod/4324cde285ba7fc58aa19281654c3982?fmt=pjpeg&wid=1014&hei=396&bgcolor=F1F5F9&bgc=F1F5F9" alt="x">
+ 			</div>
+ 			<main>
+				<div id="pager">
+						<div id="vorige">
+						<a href="index.html"> &lt;</a>
+					</div>
+					<div id="volgende">
+					<a href="formulier.html"> &gt; </a>
+					</div>
+				<div id="albums">
+					<ul>
+						<li>
+							<a onclick="
+					   		 document.getElementById('album-1').style.display='block';
+							document.getElementById('album-2').style.display='none';
+							document.getElementById('album-3').style.display='none';">
+							<img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Alleyezonme.jpg/220px-Alleyezonme.jpg"></a>
+						</li>
+						<li>
+							<a onclick="
+							document.getElementById('album-1').style.display='none';
+							document.getElementById('album-2').style.display='block';
+							document.getElementById('album-3').style.display='none';">
+							<img src="https://images-na.ssl-images-amazon.com/images/I/51iQ7z1W0jL.jpg"></a>
+						</li>
+					</ul>
+				</div> <!-- einde albums -->
+
+				<div id="multimedia">
+				<div id="album-1" style='display: block'>
+					<video controls width="80%" preload poster="https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Alleyezonme.jpg/220px-Alleyezonme.jpg">
+						<source src="2pac-Tupac All Eyez On Me.mp4" type="video/mp4"/>
+					</video>
+					<table>
+						<thead>
+							<tr>
+								<th>Track</th><th>Titel</th><th>Tijd</th><th>Plays</th>
+							</tr>
+						</thead>
+						</tbody>
+							<tr>
+								<td>1</td>
+								<td>Titel 1</td>
+								<td>02:08</td>
+								<td>
+							<a onclick="
+							document.getElementById('audio').src='tumblr_lt5f4f6mdy1qfq6yso1.mp3';
+							v=document.getElementById('audio');
+							v.play();">|></a>
+									</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Titel 2</td>
+									<td>03:18</td>
+									<td>
+							<a onclick="
+							document.getElementById('audio').src='tumblr_lt5f4f6mdy1qfq6yso1.mp3';
+							v=document.getElementById('audio');
+							v.play();">|></a>
+								</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Titel 3</td>
+									<td>02:08</td>
+									<td>
+							<a onclick="
+							document.getElementById('audio').src='tumblr_lt5f4f6mdy1qfq6yso1.mp3';
+							v=document.getElementById('audio')
+							v.play()">|></a>
+								</td>
+								</tr>
+							</tbody>
+						</table>
+						<audio style="display: block" id="audio" src="tumblr_lt5f4f6mdy1qfq6yso1.mp3" controls>
+						</audio>
+						</div> <!-- einde album-1 -->
+						<div id="album-2" style="display: none">
+							<div id="album-1" style='display: block'>
+								<video controls width="80%" preload poster="https://images-na.ssl-images-amazon.com/images/I/51nTAL2Wp4L._AA160_.jpg">
+									<source src="2pac-Tupac All Eyez On Me.mp4" type="video/webm"/>
+								</video>
+								<table>
+									<thead>
+										<tr>
+											<th>Track</th><th>Titel</th><th>Tijd</th><th>Plays</th>
+										</tr>
+									</thead>
+									</tbody>
+										<tr>
+											<td>1</td>
+											<td>Titel 1</td>
+											<td>02:08</td>
+											<td>
+										<a onclick="
+										document.getElementById('audio').src='tumblr_lt5f4f6mdy1qfq6yso1.mp3';
+										v=document.getElementById('audio');
+										v.play();">|></a>
+												</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>Titel 2</td>
+												<td>03:18</td>
+												<td>
+										<a onclick="
+										document.getElementById('audio').src='tumblr_lt5f4f6mdy1qfq6yso1.mp3';
+										v=document.getElementById('audio');
+										v.play();">|></a>
+											</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>Titel 3</td>
+												<td>02:08</td>
+												<td>
+										<a onclick="
+										document.getElementById('audio').src='tumblr_lt5f4f6mdy1qfq6yso1.mp3';
+										v=document.getElementById('audio')
+										v.play()">|></a>
+											</td>
+											</tr>
+										</tbody>
+									</table>
+									<audio style="display: block" id="audio" src="tumblr_lt5f4f6mdy1qfq6yso1.mp3" controls>
+									</audio>
+						</div> <!-- einde album-2 -->
+						</div> <!-- einde multimedia -->
+						</main>
+ 	</body>
+<footer>
+    <a href="#top"><img src="http://gradblog.schulich.yorku.ca/wp-content/uploads/2018/02/543c477e9547e.jpg.jpg" alt="x" ></a>
+    <a href="#top"><img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/YouTube.max-2800x2800.png" alt="x" ></a>
+    <a href="#top"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Facebook_New_Logo_%282015%29.svg/1200px-Facebook_New_Logo_%282015%29.svg.png" alt="x" ></a>
+</footer> </html>

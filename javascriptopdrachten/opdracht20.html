@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+
+<script type="text/javascript">
+//getalllen generator max geeft aan hoe groot
+function getalf(max) {
+return (Math.floor(Math.random()*max))+1;
+}
+
+function getala() {
+for (i=1; i<=5; i++) {
+//getal zorgt ervoor dat de getalf functie een max getal krijgt in dit geval dus 100 
+getal = getalf(100);
+if (getal<50) {
+alert("Yo " + getal + " is lager dan 50");
+}	
+else {
+alert("Yo " + getal + " is hoger dan 50");
+}
+	
+}
+}
+
+
+</script>
+</head>
+<body> 
+<a href="javascript:getala()">Klik hier</a>
+</body>
+</html>

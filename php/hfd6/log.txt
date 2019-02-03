@@ -1,0 +1,12 @@
+[21-02-2018][12:24:16pm]==> Databasequery SELECT * FROM artikelen WHERE Prijs = 10 kan niet worden uitgevoerd. <== 
+[21-02-2018][12:24:18pm]==> Databasequery SELECT * FROM artikelen WHERE Prijs = 10 kan niet worden uitgevoerd. <== 
+[21-02-2018][12:24:19pm]==> Databasequery SELECT * FROM artikelen WHERE Prijs = 10 kan niet worden uitgevoerd. <== 
+[21-02-2018][12:27:45pm]==> Databasequery SELECT * FROM artikelen WHERE Prijs =91 kan niet worden uitgevoerd. <== 
+[21-02-2018][12:28:06pm]==> Databasequery SELECT * FROM artikelen WHERE Prijs =74 kan niet worden uitgevoerd. <== 
+[21-02-2018][12:28:07pm]==> Databasequery SELECT * FROM artikelen WHERE Prijs =74 kan niet worden uitgevoerd. <== 
+[21-02-2018][12:28:07pm]==> Databasequery SELECT * FROM artikelen WHERE Prijs =95 kan niet worden uitgevoerd. <== 
+[21-02-2018][12:28:08pm]==> Databasequery SELECT * FROM artikelen WHERE Prijs =6 kan niet worden uitgevoerd. <== 
+[21-02-2018][12:28:08pm]==> Databasequery SELECT * FROM artikelen WHERE Prijs =46 kan niet worden uitgevoerd. <== 
+[21-02-2018][12:28:08pm]==> Databasequery SELECT * FROM artikelen WHERE Prijs =68 kan niet worden uitgevoerd. <== 
+[21-02-2018][12:28:08pm]==> Databasequery SELECT * FROM artikelen WHERE Prijs =54 kan niet worden uitgevoerd. <== 
+[21-02-2018][12:39:32pm]==> Databasequery SELECT * FROM artikelen WHERE Prijs =13 kan niet worden uitgevoerd. <== 

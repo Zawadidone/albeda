@@ -1,0 +1,98 @@
+<?php
+include 'dbConfig.php';
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Zena Vuurwerk</title>
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<style type="text/css">
+img{
+width: 50px;
+height: 50px;
+}
+a{
+text-decoration: none;
+color: black;
+}
+#logo{
+width: 500px;
+height: 150px;
+display: block;
+margin: auto;
+margin-left:420px;
+}
+#winkelwagen{
+
+width: 200px;
+height: 160px;
+}
+#links{
+float: left;
+
+}
+#producten{
+margin: 0 auto;
+width: 500px;;
+    
+}
+
+#footer{
+ 
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+}
+</style>
+</head>
+<body>
+<div style="width: 100%;">
+<div style="float: right;">
+<a href="viewCart.php"><img id="winkelwagen" src="http://icon-park.com/imagefiles/shopping_cart_yellow.png"></a>
+
+</div>
+<a href="index.php"><img  id="logo" src="http://www.vuurwerktwente.nl/imgs/logo-zena.png"></a>
+</div>
+<div id="links">
+<a href="index.php">Assortiment</a><br>
+<a href="knal.php">Knal Vuurwerk</a><br>
+<a href="sier.php">Sier Vuurwerk</a><br>
+</div>
+
+<div id="producten">
+<table style="width:100%;">
+<caption><h1>Knal</h1></caption>
+<tr><th></th><th>Product</th><th>Beschrijving</th><th>Prijs</th></tr>
+<?php
+$query = $db->query("SELECT * FROM products    ORDER BY id    ");
+if($query->num_rows > 0){
+while($row = $query->fetch_assoc()){
+?>
+<tr>
+<td><img src="<?php echo $row["url"]; ?>"></td>
+<td><?php echo $row["name"]; ?></td>
+<td><?php echo $row["description"]; ?></td>
+<td><?php echo '€'.$row["price"].' '; ?></td>
+<td><a href="cartAction.php?action=addToCart&id=<?php echo $row["id"]; ?>">Bestellen</a></td>
+</tr>           
+<?php } }else{ ?>
+<tr><td>Geen producten</td></tr>
+<?php } ?>
+</table>
+</div>
+
+
+
+<div id="footer">
+<ul>
+    <li>&copy zenavuurwerk.nl 2017</li>
+</ul>
+</div>
+</body>
+</html>
